@@ -11,10 +11,16 @@
         font-size: 36px;
       }
 
+      html, body { height: 100%; }
+
       .container {
-        margin: 2rem auto;
         max-width: 700px;
         min-width: 550px;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
       }
 
       h1 {
@@ -34,15 +40,23 @@
         font-weight: bold;
         text-decoration: none;
       }
+
+      footer, footer a { font-size: 12px; }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <h1>Don’t forget! November is:</h1>
-      <h2 class="event-name">NaNoWriMo!</h2>
+      <section>
+        <h1>Don’t forget! November is:</h1>
+        <h2 class="event-name">NaNoWriMo!</h2>
 
-      <p><a href="javascript:window.location.reload();">Try again</a></p>
+        <p><a href="javascript:window.location.reload();">Try again</a></p>
+      </section>
+
+      <footer>
+        <a href="https://github.com/basecase/nanowrimo_names/">Open a pull request</a> if you think you have a better idea.
+      </footer>
     </div>
 
     <script>
