@@ -67,10 +67,10 @@
                           'Gl', 'Gr', 'Ph', 'Pl', 'Pr', 'Qu', 'Sc', 'Sh', 'Sl',
                           'Sn', 'Sp', 'St', 'Sw', 'Th', 'Tr', 'Tw', 'Wr'];
 
-        var name = ['Na', 'No', 'Wri', 'Mo'].map(function() {
+        var name = ['Na', 'No', 'Wri'].map(function() {
           return consonants[Math.floor(Math.random() * consonants.length)] +
                  vowels[Math.floor(Math.random() * vowels.length)];
-        }).join('');
+        }).join('') + 'Mo';
 
         document.getElementsByClassName('event-name')[0].innerHTML = name;
       })();
